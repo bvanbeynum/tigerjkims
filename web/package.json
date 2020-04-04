@@ -1,0 +1,14 @@
+{
+  "name": "MasterKim",
+  "version": "0.0.1",
+  "description": "Master Kim's Tae Kwon Do Website",
+  "main": "server.js",
+  "repository": "",
+  "author": "Brett van Beynum",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "4.x",
+    "nodemailer": "^2.4.1",
+    "xoauth2": "^1.1.0"
+  }
+}
