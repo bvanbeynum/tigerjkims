@@ -1,1 +1,1 @@
-docker run -d -p 9001:7576 -v /home/bvanbeynum/tigerjkims/web:/usr/src/web --name tigerjkims node:latest /bin/bash -c "(cd /usr/src/web && npm start)"
+docker run --restart always -d -p 9001:7576 -v /home/bvanbeynum/tigerjkims/web:/usr/src/web --name tigerjkims node:latest /bin/bash -c "(cd /usr/src/web && npm start)"

@@ -8,7 +8,7 @@
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "4.x",
-    "nodemailer": "^2.4.1",
+    "nodemailer": "^4.6.8",
     "xoauth2": "^1.1.0"
   }
 }
