@@ -198,12 +198,6 @@ body {
 	font-size: 25px;
 	font-weight: bold;
 }
-.submitOk {
-	display: none;
-}
-.submitError {
-	display: none;
-}
 
 footer {
 	margin: 20px 0px;
@@ -249,10 +243,10 @@ footer img {
 		background: url('/media/homemasterjkim.png') top right no-repeat;
 	}
 	
-	.jumbotron {
-		/*height: 60vh;*/
-		/*max-height: 60vh;*/
-	}
+	/* .jumbotron {
+		height: 60vh;
+		max-height: 60vh;
+	} */
 	.jumbotron .container {
 		background-size: 600px auto;
 		background-origin: content-box;
