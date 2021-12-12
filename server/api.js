@@ -3,13 +3,6 @@ import nodemailer from "nodemailer";
 
 const router = express.Router();
 
-router.get("/robots.txt", (request, response) => {
-	response.send(
-		"User-Agent: *\r\n" +
-		"Allow: *"
-	);
-});
-
 router.post("/sendmail", (request, response) => {
 	let dateFormat = new Date();
 	dateFormat = dateFormat.getMonth() + "/" + dateFormat.getDate() + "/" + dateFormat.getFullYear() + " " + dateFormat.getHours() + ":" + dateFormat.getMinutes();

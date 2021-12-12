@@ -46,6 +46,13 @@ else {
 
 app.use("/api", api);
 
+app.get("/robots.txt", (request, response) => {
+	response.send(
+		"User-Agent: *\r\n" +
+		"Allow: *"
+	);
+});
+
 // listen (start app with node server.js) ======================================
 
 app.listen(port, () => {
