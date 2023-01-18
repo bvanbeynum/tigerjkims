@@ -2,7 +2,8 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
 		entry: {
-				moreInfo: "./client/src/moreinfo.jsx"
+				moreInfo: "./client/src/moreinfo.jsx",
+				index: "./client/src/index.jsx",
 		},
 		plugins: [
 				new HtmlWebpackPlugin({ 
@@ -46,6 +47,16 @@ export default {
 						favicon: "./client/static/media/favicon.ico",
 						chunks: [ "moreInfo" ],
 						template: "./client/src/testimonials.html"
+				}),
+				new HtmlWebpackPlugin({ 
+						filename: "index2.html",
+						chunks: [ "index" ],
+						title: "Tiger J Kim's Taekwondo",
+						favicon: "./client/static/media/favicon.ico",
+						meta: {
+							viewport: "width=device-width, initial-scale=1"
+						},
+						templateContent: "<html><body><div id='root'></div></body></html>"
 				})
 		],
 		module: {

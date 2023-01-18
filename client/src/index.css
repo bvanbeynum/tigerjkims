@@ -1,0 +1,78 @@
+html, body {
+	color: rgb(90 90 90);
+	margin: 0;
+	padding: 0;
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+}
+
+.pageContent {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	align-items: center;
+}
+
+.nav {
+	position: fixed;
+	width: 100%;
+	background-color: rgb(245 245 245);
+	padding: 10px 0px;
+	display: flex;
+	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	z-index: 10;
+	justify-content: space-between;
+}
+
+.nav .logo {
+	margin-left: 20px;
+}
+
+.nav .button {
+	margin-right: 40px;
+}
+
+.content {
+	/* height: 2000px; */
+	margin-top: 140px;
+	padding: 0px 20px;
+	display: flex;
+	max-width: 1000px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.panel {
+	padding: 10px;
+	margin: 10px;
+	width: 375px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.panel span {
+	transform: rotate(-45deg);
+}
+
+.button {
+	background-color: rgb(50 161 67);
+	color: rgb(247 247 247);
+	padding: 10px 25px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+.panel.facebook {
+	height: 600px;
+}
